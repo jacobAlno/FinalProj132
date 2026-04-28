@@ -21,4 +21,14 @@ def game_loop():
             attempts -= 1
             continue
 
-        
+        if guess > numToGuess:
+            print("Too high! Try a lower number.\n")
+        elif guess < numToGuess:
+            print("Too low! Try a higher number.\n")
+        else:
+            print(f"\n{'=' * 40}")
+            print("Congratulations! You got it!")
+            print(f"The number was {numToGuess}.")
+            print(f"Total attempts: {attempts}")
+            print(f"{'=' * 40}\n")
+            break
