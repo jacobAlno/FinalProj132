@@ -32,3 +32,6 @@ def game_loop():
             print(f"Total attempts: {attempts}")
             print(f"{'=' * 40}\n")
             break
+
+if __name__ == "__main__":
+    game_loop()
